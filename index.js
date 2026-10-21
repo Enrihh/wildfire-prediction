@@ -1,10 +1,9 @@
 
 var myHeaders = new Headers();
 
-const openuv_token = "openuv-v36o6rmubewswi-io";
-
-myHeaders.append("x-access-token", openuv_token);
+myHeaders.append("x-access-token", process.env.UVINDEX_TOKEN_KEY);
 myHeaders.append("Content-Type", "application/json");
+console.log(process.env.UVINDEX_TOKEN_KEY);
 
 const openuv_url = "https://api.openuv.io/api/v1/";
 

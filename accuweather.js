@@ -1,9 +1,8 @@
 // accuweather.js
-const apiKey = "zpka_86350ea978ea410182979f069293e337_143d1061";
 
 const locationKey = "317187"; 
 
-const url = `http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apiKey}&details=true`;
+const url = `http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${process.env.ACCUWEATHER_API_KEY}&details=true`;
 
 fetch(url)
   .then(response => response.json())
