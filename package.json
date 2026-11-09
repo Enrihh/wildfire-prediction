@@ -4,9 +4,20 @@
   "description": "This project might helps to predict wildfire in MNT",
   "license": "ISC",
   "author": "Ivanov Iaroslav",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "openmeteo": "tsx apishki/openmeteo.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "openmeteo": "^1.2.3"
   }
 }
